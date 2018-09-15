@@ -3827,16 +3827,65 @@ ion-app {
   background: #fff;
 }
 
-ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
+ion-app.cameraView,
+ion-app.cameraView ion-content,
+ion-app.cameraView .nav-decor {
   background: rgba(0, 0, 0, 0) none !important;
 }
 
-ion-app.cameraView .tabbar.show-tabbar, ion-app.cameraView ion-content .tabbar.show-tabbar, ion-app.cameraView .nav-decor .tabbar.show-tabbar {
+ion-app.cameraView .tabbar.show-tabbar,
+ion-app.cameraView ion-content .tabbar.show-tabbar,
+ion-app.cameraView .nav-decor .tabbar.show-tabbar {
   opacity: 0;
 }
 
 .picker-ios .picker-below-highlight {
   top: 125px !important;
+}
+
+ion-app.ios,
+.content-ios {
+  background: #fafafa;
+}
+
+.toolbar-title-ios {
+  color: #fff;
+}
+
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default {
+  color: #fff;
+}
+
+.justify-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.picker-toolbar-button {
+  text-align: start !important;
+}
+
+.picker-toolbar-button + .picker-toolbar-button {
+  text-align: end !important;
+}
+
+.picker-toolbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
 }
 
 ion-multi-picker {
@@ -29617,6 +29666,21 @@ page-message-wait .picker-opt {
   align-items: center;
 }
 
+page-message-wait .multi-picker-text,
+page-message-wait .multi-picker-placeholder {
+  color: #999;
+}
+
+page-message-wait .card-header-md + .card-content-md,
+page-message-wait .card-md .item + .card-content-md {
+  padding-top: 0;
+  border-top: 1px solid #dcd8d8;
+  padding: 0;
+  margin: 15px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
 page-modify-password .label-ios-primary,
 page-modify-password .item-input .label-ios-primary,
 page-modify-password .item-select .label-ios-primary,
@@ -29644,6 +29708,12 @@ page-modify-password .label-ios + .input + .cloned-input {
 page-modify-password .error-message {
   text-align: right;
   color: red;
+  padding: 10px;
+}
+
+page-modify-password .item-md {
+  padding-left: 0;
+  text-indent: 16px;
 }
 
 page-my-team .title_shop p {
@@ -29674,7 +29744,7 @@ page-my-team .item-ios h2 {
   margin-bottom: 7px;
 }
 
-page-credit .all {
+page-my-transaction .all {
   background: #fff;
   padding: 20px;
   border-bottom: 1px solid #efecec;
@@ -29696,16 +29766,16 @@ page-credit .all {
   align-content: center;
 }
 
-page-credit .all p {
+page-my-transaction .all p {
   display: inline;
 }
 
-page-credit .all .datetime-ios,
-page-credit .all .datetime-text {
+page-my-transaction .all .datetime-ios,
+page-my-transaction .all .datetime-text {
   display: inline;
 }
 
-page-credit .tab {
+page-my-transaction .tab {
   width: 100%;
   position: absolute;
   z-index: 444;
@@ -29726,7 +29796,7 @@ page-credit .tab {
   padding: 0 20px;
 }
 
-page-credit .table {
+page-my-transaction .table {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -29740,36 +29810,6 @@ page-credit .table {
   align-items: center;
   background: #00c7ae;
   color: #fff;
-}
-
-page-credit .list-ios .item-block .item-inner {
-  border-bottom: 0.55px solid #f5f4f9;
-}
-
-page-credit .item-ios {
-  padding-right: 10px;
-}
-
-page-credit .tab {
-  width: 100%;
-  position: absolute;
-  z-index: 444;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  bottom: 0;
-  padding: 0 20px;
 }
 
 page-my-transaction-detail .success {
@@ -30141,6 +30181,30 @@ page-open-bill .price {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+}
+
+page-open-bill .model {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: -18vh;
 }
 
 page-opening-wallet2 .label-ios-primary,
@@ -30831,6 +30895,28 @@ page-qr-code .button-ios {
   margin-top: 60px;
 }
 
+page-qr-code .model {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: -4.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 233333;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 page-qr-code ngx-qrcode img {
   width: 20rem;
   height: 20rem;
@@ -30889,60 +30975,9 @@ page-repayment .table {
   color: #fff;
 }
 
-page-reset-pay-password1 p {
-  text-align: center;
-  padding-bottom: 10%;
-  font-size: 20px;
-}
-
-page-reset-pay-password1 .password {
-  position: relative;
-  border-left: none;
-  height: 3rem;
-  margin: 0;
-  padding: 0;
+page-reset-pay-password1 .div_input {
   width: 80%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: 0 auto;
-}
-
-page-reset-pay-password1 .password input {
-  background: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 3rem;
-  line-height: 20px;
-  border: none;
-  outline-style: none;
-  border-left: 1px solid #c2c5c5;
-  opacity: 0;
-}
-
-page-reset-pay-password1 .ps {
-  width: 100%;
-  height: 3rem;
-  position: absolute;
-  border: 1px solid #000;
-  opacity: 0;
-}
-
-page-reset-pay-password1 .flex {
-  z-index: -1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-page-reset-pay-password1 .flex p {
-  width: 20%;
-  height: 4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30951,13 +30986,58 @@ page-reset-pay-password1 .flex p {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  line-height: 4rem;
-  border: 1px solid #000;
-  border-right: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-page-reset-pay-password1 .flex .last {
-  border-right: 1px solid #000;
+page-reset-pay-password1 .div_input p {
+  border: 1px solid #7c7a7a;
+  width: 50px;
+  height: 50px;
+  border-right: none;
+  line-height: 50px;
+  text-align: center;
+}
+
+page-reset-pay-password1 .calc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+}
+
+page-reset-pay-password1 .calc button,
+page-reset-pay-password1 .calc p {
+  width: 30%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 33.3%;
+  background: #fff;
+  border: 1px solid #cfd4d3;
+  color: #000;
+  margin: 0;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
 }
 
 page-reset-pay-password3 .div_input {
@@ -31149,6 +31229,21 @@ page-statistical-customer .all {
   padding: 20px;
   border-bottom: 1px solid #efecec;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 page-statistical-customer .all p {
@@ -31169,10 +31264,9 @@ page-statistical-customer .tab {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -31187,10 +31281,77 @@ page-statistical-customer .table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #00c7ae;
+  color: #fff;
+}
+
+page-statistical-money .all {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #efecec;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+page-statistical-money .all p {
+  display: inline;
+}
+
+page-statistical-money .all .datetime-ios,
+page-statistical-money .all .datetime-text {
+  display: inline;
+}
+
+page-statistical-money .tab {
+  width: 100%;
+  position: absolute;
+  z-index: 444;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  padding: 0 20px;
+}
+
+page-statistical-money .table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -31204,6 +31365,21 @@ page-statistical-product .all {
   padding: 20px;
   border-bottom: 1px solid #efecec;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 page-statistical-product .all p {
@@ -31257,6 +31433,21 @@ page-statistical-receivables .all {
   padding: 20px;
   border-bottom: 1px solid #efecec;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 page-statistical-receivables .all p {
@@ -31310,6 +31501,21 @@ page-statistical-summary .all {
   padding: 20px;
   border-bottom: 1px solid #efecec;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 page-statistical-summary .all p {
@@ -31356,6 +31562,11 @@ page-statistical-summary .table {
   align-items: center;
   background: #00c7ae;
   color: #fff;
+}
+
+page-statisticals .item-md {
+  padding-left: 0px;
+  text-indent: 15px;
 }
 
 page-un-pay .success {
@@ -31502,6 +31713,243 @@ page-wallet h2 {
 
 page-wallet .scroll-content {
   margin-top: 43px;
+}
+
+page-wallet-expend .all {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #efecec;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+page-wallet-expend .all p {
+  display: inline;
+}
+
+page-wallet-expend .all .datetime-ios,
+page-wallet-expend .all .datetime-text {
+  display: inline;
+}
+
+page-wallet-expend .tab {
+  width: 100%;
+  position: absolute;
+  z-index: 444;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  padding: 0 20px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+page-wallet-expend .table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #00c7ae;
+  color: #fff;
+}
+
+page-wallet-expend .item-cover {
+  width: auto;
+}
+
+page-wallet-friend .toolbar-md {
+  padding: 4px;
+}
+
+page-wallet-friend .toolbar .segment-md {
+  background: #fff;
+}
+
+page-wallet-friend .defulTool .toolbar-background-md {
+  background: #fff;
+}
+
+page-wallet-friend .defulTool .segment-md .segment-button {
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+
+page-wallet-friend .defulTool .toolbar .segment-md .segment-button.activated,
+page-wallet-friend .defulTool .toolbar .segment-md .segment-button.segment-activated {
+  border-color: #f53d3d;
+}
+
+page-wallet-friend .defulTool .toolbar-background-ios {
+  background: #fff;
+}
+
+page-wallet-friend-add .searchbar-input-container {
+  width: 94%;
+}
+
+page-wallet-friend-add .searchbar-md .searchbar-search-icon {
+  left: 11px;
+  top: 8px;
+}
+
+page-wallet-friend-add .searchbar-md .searchbar-input {
+  padding: 0;
+  padding-left: 35px;
+}
+
+page-wallet-friend-add .list-md {
+  border-bottom: 1px solid #bcb8b8;
+  margin: 0;
+  padding: 0;
+}
+
+page-wallet-friend-add .item-md {
+  padding-left: 0;
+}
+
+page-wallet-friend-list .list-md {
+  border-bottom: 1px solid #bcb8b8;
+  margin: 0;
+  padding: 0;
+}
+
+page-wallet-transfer-detail .list-md {
+  border-bottom: 1px solid #bcb8b8;
+  margin: 0;
+  padding: 0;
+}
+
+page-wallet-transfer-detail .div_input {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+page-wallet-transfer-detail .div_input p {
+  border: 1px solid #7c7a7a;
+  width: 50px;
+  height: 50px;
+  border-right: none;
+  line-height: 50px;
+  text-align: center;
+}
+
+page-wallet-transfer-detail .calc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+}
+
+page-wallet-transfer-detail .calc button,
+page-wallet-transfer-detail .calc p {
+  width: 30%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 33.3%;
+  background: #fff;
+  border: 1px solid #cfd4d3;
+  color: #000;
+  margin: 0;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+page-wallet-transfer-detail .model {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.48);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+page-wallet-transfer-list .listPage {
+  border-bottom: 1px solid #bcb8b8;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1px;
+}
+
+page-wallet-transfer-serch .searchbar-input-container {
+  width: 94%;
+}
+
+page-wallet-transfer-serch .searchbar-md .searchbar-search-icon {
+  left: 11px;
+  top: 8px;
+}
+
+page-wallet-transfer-serch .searchbar-md .searchbar-input {
+  padding: 0;
+  padding-left: 35px;
+}
+
+page-wallet-transfer-serch .list-md {
+  border-bottom: 1px solid #bcb8b8;
+  margin: 0;
+  padding: 0;
 }
 
 page-weigh-setup .list-ios {

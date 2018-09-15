@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 406:
+/***/ 1375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResetPayPassword2PageModule", function() { return ResetPayPassword2PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reset_pay_password2__ = __webpack_require__(131);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WalletTransferSerchPageModule", function() { return WalletTransferSerchPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wallet_transfer_serch__ = __webpack_require__(301);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ResetPayPassword2PageModule = /** @class */ (function () {
-    function ResetPayPassword2PageModule() {
+var WalletTransferSerchPageModule = /** @class */ (function () {
+    function WalletTransferSerchPageModule() {
     }
-    ResetPayPassword2PageModule = __decorate([
+    WalletTransferSerchPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__reset_pay_password2__["a" /* ResetPayPassword2Page */],
+                __WEBPACK_IMPORTED_MODULE_2__wallet_transfer_serch__["a" /* WalletTransferSerchPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__reset_pay_password2__["a" /* ResetPayPassword2Page */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__wallet_transfer_serch__["a" /* WalletTransferSerchPage */]),
             ],
         })
-    ], ResetPayPassword2PageModule);
-    return ResetPayPassword2PageModule;
+    ], WalletTransferSerchPageModule);
+    return WalletTransferSerchPageModule;
 }());
 
-//# sourceMappingURL=reset-pay-password2.module.js.map
+//# sourceMappingURL=wallet-transfer-serch.module.js.map
 
 /***/ })
 

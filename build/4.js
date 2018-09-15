@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 403:
+/***/ 1372:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MktlistPageModule", function() { return MktlistPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mktlist__ = __webpack_require__(69);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WalletFriendPageModule", function() { return WalletFriendPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wallet_friend__ = __webpack_require__(303);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MktlistPageModule = /** @class */ (function () {
-    function MktlistPageModule() {
+var WalletFriendPageModule = /** @class */ (function () {
+    function WalletFriendPageModule() {
     }
-    MktlistPageModule = __decorate([
+    WalletFriendPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__mktlist__["a" /* MktlistPage */],
+                __WEBPACK_IMPORTED_MODULE_2__wallet_friend__["a" /* WalletFriendPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__mktlist__["a" /* MktlistPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__wallet_friend__["a" /* WalletFriendPage */]),
             ],
         })
-    ], MktlistPageModule);
-    return MktlistPageModule;
+    ], WalletFriendPageModule);
+    return WalletFriendPageModule;
 }());
 
-//# sourceMappingURL=mktlist.module.js.map
+//# sourceMappingURL=wallet-friend.module.js.map
 
 /***/ })
 
